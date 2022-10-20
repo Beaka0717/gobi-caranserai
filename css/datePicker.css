@@ -1,0 +1,345 @@
+/*CodingMaker_*/
+ 
+/* body{
+background:#F5F8FF;  
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+overflow:hidden;
+} */
+
+.dycalendar {
+height:400px;
+width:320px;
+background:#fff;
+position: relative;
+
+/* position: absolute;
+top: 15%;
+left: 28%; */
+/* padding-bottom:25px; */
+
+}
+
+.dycalendar table{
+margin:30px 20px 10px 10px;        
+}
+
+.dycalendar table tr:first-child td{
+ color: #a17035;
+}
+
+.dycalendar table td{
+height:40px;   
+width:55px;
+border-radius:50%;    
+font-size:15px;
+cursor:pointer;
+position:relative;
+top:10px;
+
+}
+
+.dycalendar table td:hover{
+ background:#c1b7ab; 
+transition:all .2s ease-out;
+color: white;
+}
+
+table{
+    border-spacing: 0px;
+}
+.dycalendar-month-calend-first{font-size: 35px;}
+.dycalendar-prev-next-btn.next-btn, .prev-btn{
+    padding: 10px 25px;
+    background:none;
+    color:black;
+    border-radius:10px;
+    margin-top:-10px;
+    margin-left:10px;
+}
+
+.dycalendar .next-btn{
+ margin-right:10px;        
+}
+
+.dycalendar-prev-next-btn.next-btn:hover{
+    background:#F5F5F5;
+}
+.dycalendar-prev-next-btn.prev-btn:hover{
+    background:#F5F5F5;
+}
+
+.dycalendar .dycalendar-today-date{
+background:none;      
+background:#5e94eb;
+border-radius:10px;
+color:#fff;
+}
+
+.dycalendar .dycalendar-today-date:hover{
+/* background:#4fa2f5; */
+}
+
+.dycalendar-header{
+position:relative;
+top:25px;
+font-family: 'poppins', sans-serif;
+}
+
+.toggle-btn{
+    padding: 15px;
+    border-radius: 30px;
+    background: #fff;
+    position: absolute;
+    bottom: 17%;
+    right: 23%;
+    width: 80px;
+    cursor: pointer;
+    border: 2px solid grey;
+}
+
+.circle{
+height:50px;  
+width:50px;
+background:#fff;
+border-radius:100%;
+position:absolute;
+top:-10px;
+left:-5px;
+transition:all .2s ease-in-out;
+display:flex;
+justify-content:center;
+align-items:center;
+border:2px solid grey;
+}
+
+.circle:before{
+content:'\f186';
+font-family:fontAwesome;
+font-size:30px;
+color:black;
+}
+
+.calend-first.dark .toggle-btn{
+background:#29292B;
+border:1px solid #fff;
+transition:all .2s ease;
+}
+.calend-first.dark .toggle-btn .circle{
+left:40px;
+background:#29292B;
+border:1px solid #fff;
+}
+body.background-dark{
+background:#181818;      
+}
+.calend-first.dark .dycalendar{
+background:#29292B;
+color:#fff;
+}
+
+.calend-first.dark .dycalendar table td:hover{
+background:rgba(248, 248, 255,0.1);    
+}
+
+.calend-first.dark .dycalendar-prev-next-btn.next-btn{
+color:#fff;
+}
+
+.calend-first.dark .dycalendar-prev-next-btn.prev-btn{
+color:#fff;       
+}
+
+.calend-first.dark .dycalendar-prev-next-btn.next-btn:hover{
+background:rgba(248, 248, 255,0.1);    
+}
+
+.calend-first.dark .dycalendar-prev-next-btn.prev-btn:hover{
+background:rgba(248, 248, 255,0.1);       
+}
+
+.calend-first.dark .dycalendar .dycalendar-today-date:hover {
+background: #5e94eb;
+} 
+.calend-first.dark .circle:before{
+content:'\f185';
+font-family:fontAwesome;
+font-size:30px;
+color:#fff;
+}
+.dycalendar-month-calend-first .dycalendar-today-date, .dycalendar-month-calend-first .dycalendar-target-date {
+    background-color: #c1b7ab;
+    color: #fff;
+    border-radius: 50%;
+}
+/* calerdar2  */
+
+
+
+.dycalendar2 {
+    height:400px;
+    width:320px;
+    background:#fff;
+    position: relative;
+    /* position: absolute;
+    top: 15%;
+    right: 39%; */
+    /* padding-bottom:25px; */
+    
+    }
+.dycalendar2 table{
+    margin:30px 20px 10px 10px;        
+    }
+    
+    .dycalendar2 table tr:first-child td{
+     color: #a17035;
+    }
+    
+    .dycalendar2 table td{
+    height:40px;   
+    width:55px;
+    border-radius:50%;    
+    font-size:15px;
+    cursor:pointer;
+    position:relative;
+    top:10px;
+    
+    }
+    
+    .dycalendar2 table td:hover{
+     background:#c1b7ab; 
+    transition:all .2s ease-out;
+    color: white;
+    }
+    
+    table{
+        border-spacing: 0px;
+    }
+    .dycalendar2-month-calend-second{font-size: 35px;}
+    .dycalendar2-prev-next-btn.next-btn, .prev-btn{
+        padding: 10px 25px;
+        background:none;
+        color:black;
+        border-radius:10px;
+        margin-top:-10px;
+        margin-left:10px;
+    }
+    
+    .dycalendar2 .next-btn{
+     margin-right:10px;        
+    }
+    
+    .dycalendar2-prev-next-btn.next-btn:hover{
+        background:#F5F5F5;
+    }
+    .dycalendar2-prev-next-btn.prev-btn:hover{
+        background:#F5F5F5;
+    }
+    
+    .dycalendar2 .dycalendar2-today-date{
+    background:none;      
+    background:#5e94eb;
+    border-radius:10px;
+    color:#fff;
+    }
+    
+    .dycalendar2 .dycalendar2-today-date:hover{
+    /* background:#4fa2f5; */
+    }
+    
+    .dycalendar2-header{
+    position:relative;
+    top:25px;
+    font-family: 'poppins', sans-serif;
+    }
+    
+    .toggle-btn{
+        padding: 15px;
+        border-radius: 30px;
+        background: #fff;
+        position: absolute;
+        bottom: 17%;
+        right: 23%;
+        width: 80px;
+        cursor: pointer;
+        border: 2px solid grey;
+    }
+    
+    .circle{
+    height:50px;  
+    width:50px;
+    background:#fff;
+    border-radius:100%;
+    position:absolute;
+    top:-10px;
+    left:-5px;
+    transition:all .2s ease-in-out;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:2px solid grey;
+    }
+    
+    .circle:before{
+    content:'\f186';
+    font-family:fontAwesome;
+    font-size:30px;
+    color:black;
+    }
+    
+    .calend-second.dark .toggle-btn{
+    background:#29292B;
+    border:1px solid #fff;
+    transition:all .2s ease;
+    }
+    .calend-second.dark .toggle-btn .circle{
+    left:40px;
+    background:#29292B;
+    border:1px solid #fff;
+    }
+    body.background-dark{
+    background:#181818;      
+    }
+    .calend-second.dark .dycalendar2{
+    background:#29292B;
+    color:#fff;
+    }
+    
+    .calend-second.dark .dycalendar2 table td:hover{
+    background:rgba(248, 248, 255,0.1);    
+    }
+    
+    .calend-second.dark .dycalendar2-prev-next-btn.next-btn{
+    color:#fff;
+    }
+    
+    .calend-second.dark .dycalendar2-prev-next-btn.prev-btn{
+    color:#fff;       
+    }
+    
+    .calend-second.dark .dycalendar2-prev-next-btn.next-btn:hover{
+    background:rgba(248, 248, 255,0.1);    
+    }
+    
+    .calend-second.dark .dycalendar2-prev-next-btn.prev-btn:hover{
+    background:rgba(248, 248, 255,0.1);       
+    }
+    
+    .calend-second.dark .dycalendar2 .dycalendar2-today-date:hover {
+    background: #5e94eb;
+    } 
+    .calend-second.dark .circle:before{
+    content:'\f185';
+    font-family:fontAwesome;
+    font-size:30px;
+    color:#fff;
+    }
+    .dycalendar2-month-calend-second .dycalendar2-today-date, .dycalendar2-month-calend-second .dycalendar2-target-date {
+        background-color: #c1b7ab;
+        color: #fff;
+        border-radius: 50%;
+    } 
+
+    /* https://codepen.io/Tanya_Rybachuk/pen/jyxzEp

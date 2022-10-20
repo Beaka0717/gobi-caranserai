@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="829" height="365" viewBox="0 0 829 365">
+  <g id="그룹_11" data-name="그룹 11" transform="translate(-315 -161)">
+    <g id="사각형_77" data-name="사각형 77" transform="translate(315 161)" fill="none" stroke="#c1b7ab" stroke-width="30">
+      <rect width="829" height="365" stroke="none"/>
+      <rect x="15" y="15" width="799" height="335" fill="none"/>
+    </g>
+    <text id="BOOK_NOW" data-name="BOOK NOW" transform="translate(454 381)" fill="#c1b7ab" font-size="105" font-family="Roboto-Bold, Roboto" font-weight="700" letter-spacing="0.005em"><tspan x="0" y="0">BOOK NOW</tspan></text>
+  </g>
+</svg>

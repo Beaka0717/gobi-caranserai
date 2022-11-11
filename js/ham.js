@@ -284,11 +284,11 @@ var swiper = new Swiper('.swiper-container', {
   slidesPerView: 'auto',
 loop:true,
   coverflowEffect: {
-    rotate: 30,
+    // rotate: 30,
     stretch: 0,
-    depth: 200,
+    // depth: 200,
     modifier: 1,
-    slideShadows: true,
+    slideShadows: false,
   },
   pagination: {
     el: '.swiper-pagination',

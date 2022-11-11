@@ -279,7 +279,9 @@
   @include lg {
   }
   @include md{
-    display: none;
+    flex-direction: column;
+    align-items:center ;
+    padding: 50px 10px;
   }
   .textBox {
     position: relative;
@@ -288,6 +290,10 @@
     background-color: $backGroundColor;
     @include lg {
       margin: -15px 0px;
+    }
+    @include md{
+    width: 100%;
+    margin-bottom: 50px
     }
     h2 {
       @include titleFont();
@@ -336,6 +342,9 @@
     @include xl {
       width: 50%;
     }
+    @include md{
+      width: 100%
+      }
     .imageWrapper {
       .slide_group {
         width: 300%;

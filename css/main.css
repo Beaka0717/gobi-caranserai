@@ -1319,6 +1319,32 @@ header .mobile-menu-btn {
   display: none;
 }
 
+.roomMobile h1 {
+  font-family: "Abril Fatface";
+  font-size: 1.7em;
+  color: #d6a884;
+  text-align: center;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 960px) {
+  .roomMobile h1 {
+    font-size: 1.4em;
+  }
+}
+
+.roomMobile p {
+  font-family: "Oswald , sans-serif";
+  font-size: 1em;
+  text-align: center;
+  padding: 0px 10px 30px 10px;
+  font-size: 0.8em;
+}
+@media screen and (max-width: 960px) {
+  .roomMobile p {
+    font-size: 0.9em;
+  }
+}
+
 .wineSelection {
   max-width: 100%;
   margin: auto;
@@ -1512,7 +1538,14 @@ header .mobile-menu-btn {
 }
 @media screen and (max-width: 767px) {
   .facilitySection {
-    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 50px 10px;
   }
 }
 .facilitySection .textBox {
@@ -1524,6 +1557,12 @@ header .mobile-menu-btn {
 @media screen and (max-width: 960px) {
   .facilitySection .textBox {
     margin: -15px 0px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .facilitySection .textBox {
+    width: 100%;
+    margin-bottom: 50px;
   }
 }
 .facilitySection .textBox h2 {
@@ -1664,6 +1703,11 @@ header .mobile-menu-btn {
     width: 50%;
   }
 }
+@media screen and (max-width: 767px) {
+  .facilitySection .imgBanner {
+    width: 100%;
+  }
+}
 .facilitySection .imgBanner .imageWrapper .slide_group {
   width: 300%;
   height: 100%;
@@ -1778,11 +1822,6 @@ header .mobile-menu-btn {
   margin-top: 50px;
   width: 100%;
 }
-@media screen and (max-width: 767px) {
-  .dining {
-    display: none;
-  }
-}
 .dining h1 {
   font-family: "Abril Fatface";
   font-size: 1.7em;
@@ -1807,6 +1846,11 @@ header .mobile-menu-btn {
     font-size: 0.9em;
   }
 }
+@media screen and (max-width: 767px) {
+  .dining p {
+    display: none;
+  }
+}
 .dining ul {
   width: 200%;
   display: -webkit-box;
@@ -1814,6 +1858,12 @@ header .mobile-menu-btn {
   display: flex;
   -webkit-animation: scrollDining 25s linear infinite;
           animation: scrollDining 25s linear infinite;
+}
+@media screen and (max-width: 767px) {
+  .dining ul {
+    width: 500%;
+    margin-bottom: 80px;
+  }
 }
 @-webkit-keyframes scrollDining {
   0% {
@@ -2370,18 +2420,16 @@ footer .BackGround .wrapper .rightFooter .footer_US {
       -ms-flex-align: end;
           align-items: flex-end;
   margin: 50px 0px;
-  width: 610px;
-}
-@media screen and (max-width: 1200px) {
-  footer .BackGround .wrapper .rightFooter .footer_US {
-    width: 500px;
-  }
 }
 @media screen and (max-width: 960px) {
   footer .BackGround .wrapper .rightFooter .footer_US {
-    margin: auto;
-    width: 500px;
-    padding: 50px 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 50px 0px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -2391,7 +2439,7 @@ footer .BackGround .wrapper .rightFooter .footer_US {
   }
 }
 footer .BackGround .wrapper .rightFooter .footer_US h2 {
-  width: 34%;
+  width: 200px;
   line-height: 1.1;
 }
 @media screen and (max-width: 1200px) {
@@ -2411,12 +2459,13 @@ footer .BackGround .wrapper .rightFooter .footer_US h2 a img {
   width: 100%;
 }
 footer .BackGround .wrapper .rightFooter .footer_US p {
-  width: 60%;
+  width: 360px;
   height: 92px;
   font-family: "Oswald , sans-serif";
   font-size: 1em;
   text-align: left;
   color: #c5bcb2;
+  margin-left: 20px;
 }
 @media screen and (max-width: 960px) {
   footer .BackGround .wrapper .rightFooter .footer_US p {
@@ -2428,7 +2477,6 @@ footer .BackGround .wrapper .rightFooter .footer_US p {
     word-break: break-all;
     font-size: 0.9em;
     padding-left: 20px;
-    width: 75%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -2437,6 +2485,7 @@ footer .BackGround .wrapper .rightFooter .footer_US p {
     padding-left: 0px;
     margin-top: 50px;
     margin-bottom: 0px;
+    margin-left: 0px;
   }
 }
 footer .BackGround .wrapper .rightFooter .footer_US p span {

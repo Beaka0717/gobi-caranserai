@@ -935,7 +935,17 @@ header {
     }
   }
 }
-
+.roomMobile h1{
+  @include titleFont();
+  text-align: center;
+  padding-bottom: 10px;
+}
+.roomMobile p{
+  @include krFont();
+  text-align: center;
+  padding: 0px 10px 30px 10px;
+  font-size: 0.8em;
+}
 .wineSelection {
   @include md {
     display: none;
@@ -1010,9 +1020,7 @@ header {
 .dining {
   overflow: hidden;
   position: relative;
-  @include md {
-    display: none;
-  }
+  
   margin-top: 50px;
   width: 100%;
   h1 {
@@ -1026,12 +1034,19 @@ header {
     color: $textColorDark;
     font-size: 1.1em;
     padding: 20px 0px;
+    @include md {
+      display: none;
+    }
   }
   ul {
     width: 200%;
     display: flex;
     animation: scrollDining 25s linear infinite;
     // animation: scroll infinite 4s alternate;
+    @include md {
+      width: 500%;
+      margin-bottom: 80px;
+    }
     @keyframes scrollDining {
       0% {
         transform: translateX(0);
@@ -1224,21 +1239,21 @@ footer {
           justify-content: space-around;
           align-items: flex-end;
           margin: 50px 0px;
-          width: 610px;
+         
           @include xl {
-            width: 500px;
+            
           }
           @include lg {
-            margin: auto;
-            width: 500px;
-            padding: 50px 0px;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 50px 0px;
           }
           @include md {
             padding-top: 0px;
             padding-bottom: 10px;
           }
           h2 {
-            width: 34%;
+            width: 200px;
             line-height: 1.1;
             @include xl {
               line-height: 2.9;
@@ -1255,22 +1270,24 @@ footer {
             }
           }
           p {
-            width: 60%;
+            width: 360px;
             height: 92px;
             @include krFont();
             text-align: left;
             color: $ffoterTextColor;
+            margin-left: 20px;
             @include xl {
               word-break: break-all;
               font-size: 0.9em;
               padding-left: 20px;
-              width: 75%;
+            
             }
             @include md {
               text-align: center;
               padding-left: 0px;
               margin-top: 50px;
               margin-bottom: 0px;
+              margin-left: 0px;
             }
 
             span {

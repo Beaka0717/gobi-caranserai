@@ -1,0 +1,61 @@
+@media only screen and (min-width: 767px){
+.roomMobile{
+    display: none;
+}
+}
+:root {
+    --swiper-theme-color: #d6a884;
+}
+@media only screen and (max-width: 767px){
+
+  
+    .roomMobile{
+    overflow: hidden;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    display: block;
+    }
+
+.card{
+    background:#fff;
+    position:relative;
+    max-width:300px;
+    height:350px;
+    margin:0 auto;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+}
+.card .content{
+    width: 100%;
+}
+.card .content a{
+    display: block;
+}
+.card .content a img{
+    width: 100%;
+}
+
+.card .slidertext h3{
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 30px;
+}
+
+ .swiper-slide{
+  max-width:300px;
+  margin-left: 10px;
+  margin-left: 10px;
+} 
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: -30px !important;
+    left: 0;
+    width: 100%; 
+
+    }
+  
+
+}
+.swiper-pagination-bullet {
+    background: #d6a884 !important;
+}

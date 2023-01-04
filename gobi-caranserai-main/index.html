@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CX9FPXWRHP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CX9FPXWRHP');
+</script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GOBI CARAVANSERAI HOTEL</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="shortcut icon" href="./images/faviIcon.png" />
+  <link rel="stylesheet" href="./css/datePicker.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./js/ham.js"></script>
+  <link rel="stylesheet" href="./css/swiperjs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dycalendarjs@1.2.1/css/dycalendar.css">
+  <!-- <script src="./js/arrow.js"></script> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- swiper js link -->
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- font -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <div class="innerBox_big">
+      <div class="mobile-menu-btn">
+        <div class="hamburger-menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <h1 class="logo">
+        <a href="#"><img src="./images/logo.svg" alt="logo" /></a>
+      </h1>
+      <h2 class="mobile-logo">
+        <a href="#">GOBI<br>CARAVANSERAI</a>
+      </h2>
+      <div class="menuWrapper">
+        <ul id="nav">
+          <li><a href="#">ROOMS</a></li>
+          <li><a href="#">FACILITIES</a></li>
+          <li><a href="#">EVENTS</a></li>
+          <li><a href="#">ABOUT US</a></li>
+        </ul>
+      </div>
+      <div class="bookNow">
+        <a href="#"><img src="./images/book-btn.svg" alt="my page" /></a>
+      </div>
+    </div>
+  </header>
+  <div class="back">
+    <!-- mainBanner -->
+    <div class="innerBox_big">
+      <div id="mainBanner">
+        <div class="videoWrapper">
+          <video playsinline autoplay muted loop>
+            <source src="./video/반복적인 삶속에 힐링 공간.mp4" type="video/webm" />
+          </video>
+        </div>
+        <div class="videoWrapper">
+          <video playsinline autoplay muted loop>
+            <source src="./video/secondVideo.mp4" type="video/webm" />
+          </video>
+        </div>
+        <ul class="arrow">
+          <li class="left">
+            <img id="left" src="./images/icons/arrow.png" alt="left" />
+          </li>
+          <li class="right">
+            <img id="right" src="./images/icons/arrow_right.png" alt="right" />
+          </li>
+        </ul>
+        <div class="scroll">
+          <div class="scroll-img">
+            <img src="./images/icons/scroll_down_icon.png" alt="scroll down" />
+          </div>
+          <p>scroll</p>
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+    <div class="bG-colorP">
+      <div class="calendSection">
+     
+        <div class="reservation">
+          <div class="res-room">
+            <h2>Reservation</h2>
+            <p>Room</p>
+          </div>
+          <div class="res-checkIn">
+            <h2>Check In</h2>
+            <p>날짜를 선택하세요</p>
+          </div>
+          <div class="res-checkOut">
+            <h2>Check Out</h2>
+            <p>날짜를 선택하세요</p>
+          </div>
+          <div class="adult">
+            <h2>Adult</h2>
+            <p>0</p>
+          </div>
+          <div class="children">
+            <h2>Children</h2>
+            <p>0</p>
+          </div>
+        
+          
+
+
+
+        </div>
+        <div class="search">
+          <a href="./login.html"><img src="./images/icons/search-icon.svg"></a>
+          <h2>Search</h2>
+
+        </div>
+        <!-- callendar -->
+        <div class="dispNone">
+          <div class="calend-show-hide">
+            <div class="calend-first">
+              <div class="dycalendar" id="dycalendar"></div>
+              <!-- <div class="toggle-btn">
+            <span class="circle"></span>
+          </div> -->
+            </div>
+            <div class="calend-second">
+              <div class="dycalendar2" id="dycalendar2"></div>
+            </div>
+            <div class="cal-extra">
+              <!-- adult children -->
+              <div class="adult">
+                <h2>성인</h2>
+                <div class="number">
+                  <span class="minus">-</span>
+                  <input id = "adultCnt" type="text" value="1" />
+                  <span class="plus">+</span>
+                </div>
+              </div>
+              <div class="child">
+                <h2>어린이</h2>
+                <div class="numberCh">
+                  <span class="minusCh">-</span>
+                  <input id = "childCnt" type="textCh" value="0" />
+                  <span class="plusCh">+</span>
+                </div>
+              </div>
+              <div class="btn-select">
+                <button class="spin" id="spin">
+                  <span>선택 완료</span>
+                  <span>
+                    <svg viewBox="0 0 24 24">
+                      <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- wrapper -->
+    <div class="locationWrapper">
+
+      <div class="container">
+        <div class="location">
+          <h1>Finding Us</h1>
+          <div class="displayingFlex">
+            <div class="location-text">
+              <div class="darkBackground">
+                <h2>Where We Located</h2>
+                <p>울란바토르에서 420km</p>
+                <p>공룡들의 땅이었던 차강 소브라가에서 4.5km</p>
+              </div>
+            </div>
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2842.0893046969773!2d105.64573001574513!3d44.574741300369126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d8cffa7c1b6d539%3A0x9116d9b18c2d5d6c!2sGobi%20Caravanserai!5e0!3m2!1sen!2skr!4v1661768228296!5m2!1sen!2skr"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- rooms -->
+    <section>
+      <div class="roomDesktop">
+        <h1>Provide You With</h1>
+        <p>돌로 만들어진 것 같은 딱딱한 벽, 부드럽고 포근한 침대와 이불,<br>
+          그리고 창 밖에 보이는 광활한 사막<br>
+        </p>
+        <ul class="roomSelection">
+          <li class="room">
+            <a href="#">
+              <p>Tripple Room</p>
+              <div class="imgBox"><img src="./images/room-Tripple.jpg" alt="trippke room"></div>
+            </a>
+          </li>
+          <li class="room">
+            <a href="#">
+              <p>King Room</p>
+              <div class="imgBox"><img src="./images/roomKing.jpg" alt="trippke room"></div>
+            </a>
+          </li>
+          <li class="room">
+            <a href="#">
+              <p>Double Room</p>
+              <div class="imgBox"><img src="./images/roomTwin.jpg" alt="trippke room"></div>
+            </a>
+          </li>
+      </div>
+      <!-- mobileRoom -->
+      <div class="roomMobile">
+        <h1>Provide You With</h1>
+        <p>돌로 만들어진 것 같은 딱딱한 벽, 부드럽고 포근한 침대와 이불,<br>
+          그리고 창 밖에 보이는 광활한 사막<br>
+        </p>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+        
+            
+            
+            <div class="swiper-slide">
+              <div class="card">
+          
+          <div class="content">
+            <a href="#"><img src="./images/mobile-room-king.png"></a>
+           
+          </div>
+          <div class="slidertext">
+            <h3>king room</h3>
+          
+          </div>
+        </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="card">
+      
+      <div class="content">
+        <a href="#"><img src="./images/king-f.jpg"></a>
+       
+      </div>
+      <div class="slidertext">
+        <h3>king room</h3>
+      </div>
+    </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="card">
+  
+  <div class="content">
+    <a href="#"><img src="./images/m-tripple-2.png"></a>
+   
+  </div>
+  <div class="slidertext">
+    <h3>triple room</h3>
+  </div>
+</div>
+</div>
+<div class="swiper-slide">
+  <div class="card">
+
+<div class="content">
+<a href="#"><img src="./images/m-king-f-3.jpg"></a>
+
+</div>
+<div class="slidertext">
+<h3>standart room</h3>
+</div>
+</div>
+</div>  
+<div class="swiper-slide">
+  <div class="card">
+
+<div class="content">
+<a href="#"><img src="./images/m-twin-f.jpg"></a>
+
+</div>
+<div class="slidertext">
+<h3>twin room</h3>
+</div>
+</div>
+</div>         
+           
+            
+           
+          
+            
+          </div>
+          
+          <div class="swiper-pagination"></div>
+          
+        </div>
+      </div>
+      
+      
+      <!-- mobileRoom Ends -->
+  </div>
+  </section>
+  <section>
+    <div class="wineSelection">
+      <a href="#">
+        <div class="textBox">
+          <h5>Wine Recommendations From Gobi</h5>
+          <p>메마르고 아무 냄새도 나지 않을것 같은 사막에서의<br>와인 한모금</p>
+          <div class="SeeMoreBtn"><button>
+              <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+              </svg>
+              <span>보러가기</span></button></div>
+        </div>
+        <img src="./images/wine-selection.jpg" alt="wine-selection">
+      </a>
+    </div>
+  </section>
+  <!-- facility part -->
+  <div class="facilitySection">
+    <div class="textBox">
+      <h2>Facility of Gobi Caravanserai</h2>
+      <p>Gobi Caravanserai에서 제공하는 다양한 편의 시설과 서비스를 통해 여행을 좀 더 편안하고 풍족하게 즐겨보세요
+        차강소브라가, 초원 등의 그림, 사진을 전시한 전시장, 마사지 등 다양한 시설과 서비스를 제공합니다
+      </p>
+      <div class="SeeMoreBtn"><button>
+          <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+          </svg>
+          <span>보러가기</span></button></div>
+    </div>
+    <div class="imgBanner">
+      <div class="imageWrapper" id="slider">
+        <ul class="slide_group">
+          <li class="slide" id="slide">
+            <img src="./images/facility-1.jpg" alt="facility">
+          </li>
+          <li class="slide" id="slide">
+            <img src="./images/facility-3.jpg" alt="facility">
+          </li>
+          <li class="slide" id="slide">
+            <img src="./images/facility-2.png" alt="facility">
+          </li>
+        </ul>
+      </div>
+      <div class="arrow next">
+        <img id="next" src="./images/icons/arrow no-border.svg" alt="arrow">
+      </div>
+
+
+    </div>
+  </div>
+  <!-dining- -->
+    <section class="dining">
+      <h1>Dining In Gobi</h1>
+      <p>오픈 된 스튜디오형 타입으로 머무는동안 쾌적하고 자유로운 순간을 선사합니다</p>
+      <ul class="slide-track">
+        <li class="slide"><a href="#"><img src="./images/dinning-1.png" alt="dining"></a></li>
+        <li class="slide"><a href="#"><img src="./images/dining-2.png" alt="dining"></a></li>
+        <li class="slide"><a href="#"><img src="./images/dining-3.png" alt="dining"></a></li>
+        <li class="slide"><a href="#"><img src="./images/dining-4.png" alt="dining"></a></li>
+        <li class="slide"><a href="#"><img src="./images/dinning-1.png" alt="dining"></a></li>
+        <li class="slide"><a href="#"><img src="./images/dining-2.png" alt="dining"></a></li>
+        <li class="slide"><a href="#"><img src="./images/dining-3.png" alt="dining"></a></li>
+        <li class="slide"><a href="#"><img src="./images/dining-4.png" alt="dining"></a></li>
+        <!-- example -->
+        <!-- <li class="slide"><a href="#"><img src="./images/dining-1.png" alt="dining"></a></li>
+          <li class="slide"><a href="#"><img src="./images/dining-2.png" alt="dining"></a></li>
+          
+          <li class="slide"><a href="#"><img src="./images/dining-4.png" alt="dining"></a></li> -->
+      </ul>
+    </section>
+
+
+
+    <section class="eventSection">
+      <div class="imgBanner">
+        <div class="imageWrapper" id="slider">
+          <ul class="slide_groupE">
+            <li class="slide" id="slide">
+              <img src="./images/event-1.jpg" alt="facility">
+            </li>
+            <li class="slide" id="slide">
+              <img src="./images/event-2.jpg" alt="facility">
+            </li>
+            <li class="slide" id="slide">
+              <img src="./images/event-4.jpg" alt="facility">
+            </li>
+          </ul>
+        </div>
+        <div class="arrow next">
+          <img id="arrow" src="./images/icons/arrow no-border.svg" alt="arrow">
+        </div>
+
+
+      </div>
+      <div class="textBox">
+        <h2>Events of Gobi Caravanserai</h2>
+        <p>이벤트를 신청하신 분들께 망원경과 별자리 표를 대여해드리고 있습니다</br>
+          계절별로 달라지는 별자리들을 찾아 사진을 찍어오시면 기념품을 드립니다
+        </p>
+        <div class="SeeMoreBtn"><button>
+            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+              <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+              <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+            </svg>
+            <span>보러가기</span></button></div>
+      </div>
+
+    </section>
+    <footer>
+      <div class="BackGround">
+        <div class="wrapper">
+          <div class="leftFooter">
+            <div class="contactUs">
+              <form class="form">
+                <h1>Quick Contact</h1>
+
+
+
+                <input placeholder="Your email " type="text" tabindex="1" class="form__field">
+
+                <textarea placeholder="Enter your message here..."></textarea>
+
+                <button name="submit" type="submit" class="btn btn--primary btn--inside uppercase">submit</button>
+              </form>
+            </div>
+          </div>
+          <div class="rightFooter">
+            <h1>Follow Us On</h1>
+            <ul>
+              <li><a href="#"><img src="./images/icons/footer-icon-messenger.png" alt="messenger"></a></li>
+              <li><a href="#"><img src="./images/icons/footer-icon-fb.png" alt="fb"></a></li>
+              <li><a href="#"><img src="./images/icons/footer-icon-insta.png" alt="insta"></a></li>
+              <li><a href="#"><img src="./images/icons/footer-icon-youTube.png" alt="you-tube"></a></li>
+            </ul>
+            <div class="footer_US">
+              <h2><a href="#"><img src="./images/icons/그룹 10.png" alt="logo"></a></h2>
+              <p><span>(주)Gobi 호텔</span><br>
+                주소 : (04433) ulziit sum 30km <br>
+                대표이사 : 닌진 / 사업자등록증 : 100-00-0000 <br>
+                통신판매신고번호 : 2004-ulziit-2802호</p>
+            </div>
+
+          </div>
+
+        </div>
+        <p>© GOBI CARAVANERAI HOTEL all rights reserved.</p>
+      </div>
+    </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/dycalendarjs@1.2.1/js/dycalendar.js"></script>
+
+</body>
+
+</html>

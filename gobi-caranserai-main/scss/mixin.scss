@@ -1,0 +1,496 @@
+@mixin titleFont {
+  font: {
+    family: $mainFont;
+    size: 1.7em;
+  }
+  color: $textColorBrown;
+  @include lg {
+    font-size: 1.4em;
+  }
+}
+
+@mixin krFont {
+  font: {
+    family: $krFont;
+    size: 1em;
+  }
+  @include lg {
+    font-size: 0.9em;
+  }
+}
+
+@mixin pos($p: absolute, $top: null, $right: null, $bottom: null, $left: null) {
+  position: $p;
+  top: $top;
+  bottom: $bottom;
+  right: $right;
+  left: $left;
+}
+@mixin flexWrap {
+  display: flex;
+}
+@mixin blind {
+  display: none;
+}
+@mixin visible {
+  display: block;
+}
+@mixin span_blind {
+  transition: all 0.25s ease-in-out;
+  width: 0%;
+  height: 0%;
+}
+@mixin mainTitle {
+  text-align: center;
+  @include titleFont();
+  font-size: 1.7em;
+  padding: 40px 0px;
+  letter-spacing: 1.2px;
+}
+// room part mixin
+@mixin Width30 {
+  width: 30%;
+}
+@mixin SeeMoreBtn {
+  button {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid transparent;
+    outline: none;
+    transition: 1s ease-in-out;
+
+    svg {
+      position: absolute;
+      right: 33%;
+      top: 3%;
+      fill: none;
+      stroke: #fff;
+      stroke-dasharray: 150 480;
+      stroke-dashoffset: 150;
+      transition: 1s ease-in-out;
+      @include xl {
+        right: 28%;
+        top: 3%;
+      }
+      @include lg {
+        height: 45px;
+        width: 150px;
+        right: 27%;
+        top: 17%;
+      }
+    }
+
+    &:hover {
+      transition: 1s ease-in-out;
+      // background: #4F95DA;
+    }
+
+    &:hover svg {
+      stroke-dashoffset: -480;
+    }
+
+    span {
+      color: white;
+      font-size: 18px;
+      font-weight: 100;
+      @include lg {
+        font-size: 0.9em;
+      }
+    }
+  }
+  margin-top: 80px;
+  @include xxxl {
+    margin-top: 30px;
+  }
+  @include lg {
+    margin-top: 0px;
+  }
+
+  @include lg {
+    font-size: 0.9em;
+    padding: 6px 10px;
+  }
+
+  // color: white;
+  // background-color: transparent;
+  // padding: 8px 12px;
+  // border: solid 2px white;
+}
+@mixin SeeMoreBtnBrown {
+  button {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid transparent;
+    outline: none;
+    transition: 1s ease-in-out;
+
+    svg {
+      position: absolute;
+      right: 39%;
+      top: 3%;
+      fill: none;
+      stroke: #d6a884;
+      stroke-dasharray: 150 480;
+      stroke-dashoffset: 150;
+      transition: 1s ease-in-out;
+      @include xl {
+        height: 50px;
+        right: 36%;
+        top: 8%;
+        width: 160px;
+      }
+      @include lg {
+        right: 34%;
+        top: 18%;
+        height: 45px;
+        width: 150px;
+      }
+    }
+
+    &:hover {
+      transition: 1s ease-in-out;
+      // background: #4F95DA;
+    }
+
+    &:hover svg {
+      stroke-dashoffset: -480;
+    }
+
+    span {
+      color: #d6a884;
+      font-size: 18px;
+      font-weight: 100;
+      @include lg {
+        font-size: 1em;
+      }
+    }
+  }
+  margin-top: 40px;
+  margin-bottom: 10px;
+  @include xxxl {
+    margin-top: 30px;
+  }
+  @include lg {
+    margin-top: 15px;
+  }
+
+  @include lg {
+    font-size: 0.9em;
+    padding: 6px 10px;
+  }
+
+  // color: white;
+  // background-color: transparent;
+  // padding: 8px 12px;
+  // border: solid 2px white;
+}
+@mixin arrowBtn {
+  @include pos($bottom: 3%, $right: 12%);
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+  @-webkit-keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transform-origin: center center;
+      transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+      transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+      transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+      transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+  }
+  @keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transform-origin: center center;
+      transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+      transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+      transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+      transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+  }
+}
+@mixin facility {
+  max-width: 1400px;
+  // width: 100%;
+  margin: auto;
+  display: flex;
+  padding-bottom: 100px;
+  padding-top: 150px;
+  @include xl {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  @include lg {
+  }
+  @include md{
+    flex-direction: column;
+    align-items:center ;
+    padding: 50px 10px;
+  }
+  .textBox {
+    position: relative;
+    margin: 20px 0px;
+    width: 60%;
+    background-color: $backGroundColor;
+    @include lg {
+      margin: -15px 0px;
+    }
+    @include md{
+    width: 100%;
+    margin-bottom: 50px
+    }
+    h2 {
+      @include titleFont();
+      text-align: center;
+      padding-top: 60px;
+      padding-bottom: 20px;
+
+      letter-spacing: 1.5px;
+      @include xl {
+        padding-top: 67px;
+      }
+      @include lg {
+        padding-top: 50px;
+        font-size: 1.5em;
+      }
+    }
+    p {
+      @include krFont();
+      color: #828282;
+      text-align: left;
+      max-width: 70%;
+      margin: 0 auto;
+      line-height: 1.8;
+      
+    }
+    .SeeMoreBtn {
+      position: relative;
+      text-align: center;
+      @include SeeMoreBtnBrown();
+      @include xl {
+        margin-bottom: 15px;
+        margin-top: 10px;
+      }
+      @include lg {
+        margin-top: 0px;
+        font-size: 0.9em;
+        padding: 6px 10px;
+      }
+    }
+  }
+
+  .imgBanner {
+    position: relative;
+    overflow: hidden;
+    width: 34%;
+    @include xl {
+      width: 50%;
+    }
+    @include md{
+      width: 100%
+      }
+    .imageWrapper {
+      .slide_group {
+        width: 300%;
+        height: 100%;
+        display: flex;
+        position: relative;
+
+        .slide {
+          flex: 1;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .arrow {
+      z-index: 1000;
+      @include arrowBtn();
+      @include pos($right: 5%);
+      a {
+        display: block;
+        img {
+          display: block;
+          padding: 5px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@mixin event {
+  max-width: 1400px;
+  // width: 100%;
+  margin: auto;
+  display: flex;
+  padding-bottom: 200px;
+  padding-top: 100px;
+  @include xl {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  @include lg {
+  }
+  @include md{
+    display: none;
+  }
+  .textBox {
+    position: relative;
+    margin: 20px 0px;
+    width: 60%;
+    background-color: $backGroundColor;
+    @include lg {
+      margin: -15px 0px;
+    }
+    h2 {
+      @include titleFont();
+      text-align: center;
+      padding-top: 80px;
+      padding-bottom: 20px;
+
+      letter-spacing: 1.5px;
+      @include xl {
+        padding-top: 67px;
+      }
+      @include lg {
+        padding-top: 50px;
+        font-size: 1.5em;
+      }
+    }
+    p {
+      @include krFont();
+      color: #828282;
+      text-align: left;
+      max-width: 70%;
+      margin: 0 auto;
+      line-height: 1.8;
+      
+    }
+    .SeeMoreBtn {
+      position: relative;
+      text-align: center;
+      @include SeeMoreBtnBrown();
+      @include xl {
+        margin-bottom: 15px;
+        margin-top: 10px;
+      }
+      @include lg {
+        margin-top: 0px;
+        font-size: 0.9em;
+        padding: 6px 10px;
+      }
+    }
+  }
+
+  .imgBanner {
+    position: relative;
+    overflow: hidden;
+    width: 34%;
+    @include xl {
+      width: 50%;
+    }
+    .imageWrapper {
+      // height: 100%;
+      .slide_groupE {
+        // height: 100%;
+        width: 300%;
+        display: flex;
+        position: relative;
+        .slide {
+          flex: 1;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .arrow {
+      z-index: 1000;
+      @include arrowBtn();
+      @include pos($right: 5%);
+      a {
+        display: block;
+        img {
+          display: block;
+          padding: 5px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@mixin reservationItems {
+  h2 {
+    color: #555;
+    padding-bottom: 10px;
+  }
+  p {
+    
+    padding-top: 10px;
+    color: #7f8080;
+  }
+  padding: 10px 25px 10px 25px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #ccc;
+}
